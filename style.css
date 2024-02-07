@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+*{
+    background-color: black;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
