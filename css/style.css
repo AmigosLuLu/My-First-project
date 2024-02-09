@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*{
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    h1{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2.5rem;
+        color: #4CAF50;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5rem;
+
+    img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        z-index: 2;
+    }
+}
+.object-blur{
+    position: absolute;
+    top: 12rem;
+    width: 16%;
+    height: 30%;
+    background-color : #4CAF50;
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+svg {
+    font-family: 'Silkscreen', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+svg text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #040000;
+    font-size: 55px;
+}
+@keyframes stroke {
+    0%   {
+        fill: rgba(70,204,0,0); stroke: rgb(76, 175, 80);
+        stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: rgba(70,204,0,0); stroke: rgba(255,255,255,1); }
+    80%  {fill: rgba(70,204,0,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
+    100% {
+        fill: rgb(76, 175, 80); stroke: rgba(255,255,255,0);
+        stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+}
+.wrapper{
+    margin-top: 2rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 6.5rem;
+    animation: moveUpDown 2s linear infinite;
+}
+
+@keyframes moveUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(25px); }
+    100% { transform: translateY(0); }
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    height: 100vh;
+    h1{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2.5rem;
+        color: #4CAF50;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+.btn_click_1{
+    font-family: 'Orbitron', sans-serif;
+    padding: 20px 35px;
+    margin-top: 4.5rem;
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    color: black;
+    font-size: 20px;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    cursor: pointer;
+}
+.btn_click_1:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    background-color: #b6e3b5;
+    color: #4CAF50;
+    animation-name: jello;
+    -webkit-animation-name: jello;
+    -moz-animation-name: jello;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+}
+
+@keyframes jello {
+    from,11.1%,to {transform: translate3d(0, 0, 0);}
+    22.2% {transform: skewX(-12.5deg) skewY(-12.5deg);}
+    33.3% {transform: skewX(6.25deg) skewY(6.25deg);}
+    44.4% {transform: skewX(-3.125deg) skewY(-3.125deg);}
+    55.5% {transform: skewX(1.5625deg) skewY(1.5625deg);}
+    66.6% {transform: skewX(-0.78125deg) skewY(-0.78125deg);}
+    77.7% {transform: skewX(0.390625deg) skewY(0.390625deg);}
+    88.8% {transform: skewX(-0.1953125deg) skewY(-0.1953125deg);}
+}
+
+
